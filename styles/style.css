@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.nav-bar{
+    background-color: #DE8400;
+    text-decoration: none;
+}
+
+
+.functions{
+  flex-direction: row;
+}
+
+ .functions a{
+    display: block;
+    text-decoration: none;
+    color: #0F0900;
+
+
+}
+
+.functions ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
