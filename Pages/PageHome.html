@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,11 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">
-            <img class="logo-svg" src="../assets/Logolocamobi.svg" alt="Logo da Locamobi">
-        </div>
-        <nav>
+        <nav class="nav">
+            <div class="logo">
+                <img class="logo-svg" src="../assets/Logolocamobi.svg" alt="Logo da Locamobi">
+            </div>
+
             <ul class="nav-menu">
                 <li><a href="../Pages/AlugarVeiculo.html">Alugar Veículo</a></li>
                 <li><a href="#cadastrar">Cadastrar Veículo</a></li>
@@ -23,7 +24,7 @@
         </nav>
         <div class="auth-buttons">
             <a href="#cadastrar" class="btn btn-outline">Cadastrar</a>
-            <a href="#entrar" class="btn btn-solid">Entrar</a>
+            <a href="../Pages/entrar.html" class="btn btn-solid">Entrar</a>
         </div>
     </header>
 
@@ -66,20 +67,22 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <div class="car-icon"></div>
-                <img src="../assets/Logolocamobi.svg" alt="Logo Locamobi">
-                <span>Locamobi</span>
+                <div class="car-icon"> <img src="../assets/Logolocamobi.svg" alt="">
+                    <h4>Locamobi</h4>
+                </div>
+
             </div>
-            <ul class="footer-links">
-                <li><a href="#sobre">Sobre a Locamobi</a></li>
-                <li><a href="#contratos">Contratos e Termos</a></li>
-                <li><a href="#politicas">Políticas</a></li>
-                <li><a href="#suporte">Suporte</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="#whatsapp" class="social-icon">W</a>
-                <a href="#instagram" class="social-icon">@</a>
+            <div class="footer-links">
+                <a href="#">Sobre a Locamobi</a>
+                <a href="#">Contrato e Termos</a>
+                <a href="#">Políticas</a>
+                <a href="#">Suporte</a>
+                <a href="#">Contato</a>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="../assets/iconeWats.svg" alt=""></a>
+                    <a href="#" class="social-icon"><img src="../assets/iconeInstagram.svg" alt=""></a>
+                </div>
             </div>
         </div>
     </footer>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,10 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">
-            <a href="../Pages/PageHome.html"><img class="logo-svg" src="../assets/Logolocamobi.svg" alt="Logo da Locamobi"></a>
-        </div>
-        <nav>
+        <nav class="nav">
+            <div class="logo">
+                <a href="../Pages/PageHome.html"><img class="logo-svg" src="../assets/Logolocamobi.svg" alt="Logo da Locamobi"></a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="../Pages/AlugarVeiculo.html">Alugar Veículo</a></li>
                 <li><a href="#cadastrar">Cadastrar Veículo</a></li>
@@ -23,7 +23,7 @@
         </nav>
         <div class="auth-buttons">
             <a href="#cadastrar" class="btn btn-outline">Cadastrar</a>
-            <a href="#entrar" class="btn btn-solid">Entrar</a>
+            <a href="../Pages/entrar.html" class="btn btn-solid">Entrar</a>
         </div>
     </header>
 
@@ -190,9 +190,9 @@
 
         <!-- Pagination -->
         <div class="pagination">
-            <button class="pagination-btn">‹</button>
+            <div class="pagination-btn"><img src="../assets/VectorL.svg" alt=""></div>
             <span class="pagination-number">1</span>
-            <button class="pagination-btn">›</button>
+            <div class="pagination-btn"><img src="../assets/VectorR.svg" alt=""></div>
         </div>
     </main>
 
@@ -200,8 +200,10 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <div class="car-icon"></div>
-                Locamobi
+                <div class="car-icon"> <img src="../assets/Logolocamobi.svg" alt="">
+                    <h4>Locamobi</h4>
+                </div>
+
             </div>
             <div class="footer-links">
                 <a href="#">Sobre a Locamobi</a>
@@ -209,12 +211,17 @@
                 <a href="#">Políticas</a>
                 <a href="#">Suporte</a>
                 <a href="#">Contato</a>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="../assets/iconeWats.svg" alt=""></a>
+                    <a href="#" class="social-icon"><img src="../assets/iconeInstagram.svg" alt=""></a>
+                </div>
+
+
             </div>
-            <div class="social-icons">
-                <a href="#" class="social-icon">📱</a>
-                <a href="#" class="social-icon">📷</a>
-            </div>
+
         </div>
+
     </footer>
 </body>
 
