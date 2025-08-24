@@ -1,82 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locamobi</title>
+    <title>Locamobi - Aluguel de Veículos</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-        <nav class="nav-bar">
-            <img src="../assets/Logolocamobi.svg" alt="Logo da Locamobi">             
-            
-            <div class="functions">
-                <ul>
-                    <li><a href="/Pages/AlugarVeiculo.html">Alugar Veículo</a></li>
-                    <li></li><a href="/">Cadastrar Veículo</a></li>
-                    <li></li><a href="/">Como Funciona?</a></li>
-                    <li><a href="/Pages/entrar.html">Entrar</a></li>
-                    <li><a href="/Pages/cadastrar.html">Cadastrar</a></li>
-                </ul>
-            </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img class="logo-svg" src="../assets/Logolocamobi.svg" alt="Logo da Locamobi">
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../Pages/AlugarVeiculo.html">Alugar Veículo</a></li>
+                <li><a href="#cadastrar">Cadastrar Veículo</a></li>
+                <li><a href="#como-funciona">Como Funciona?</a></li>
+            </ul>
         </nav>
+        <div class="auth-buttons">
+            <a href="#cadastrar" class="btn btn-outline">Cadastrar</a>
+            <a href="#entrar" class="btn btn-solid">Entrar</a>
+        </div>
+    </header>
 
-        <section class="content-area">
-            <div class="introduction"> 
-             <h1>Bem-vindo à</h1>
-            <h2>Locamobi</h2>
-            <p>Alugue seu veículo de forma rápida, segura e sem burocracia, 
-                ou transforme o seu carro parado em uma fonte de renda extra. 
-                <span>Locamobi</span>— seu carro, sua rota, seu tempo.</p>
-
-                <button class="locate">Alugar Veículo</button>
-                <button class="register">Cadastrar Veículo</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à <span class="brand">Locamobi</span></h1>
+            <p>Alugue seu veículo de forma rápida, segura e sem burocracia, ou transforme o seu carro parado em uma fonte de renda extra.</p>
+            <p class="tagline">Locamobi — seu carro, sua rota, seu tempo.</p>
+            <div class="hero-buttons">
+                <a href="#alugar" class="btn btn-primary">Alugar Veículo</a>
+                <a href="#cadastrar" class="btn btn-secondary">Cadastrar Veículo</a>
             </div>
-            
-            <div class="introduction-img">
-                <img src="../assets/ImagemVeiculos.png" alt="Imagem de veículos ilustrativas">
+        </div>
+        <div class="hero-image">
+            <img src="../assets/Imagem Veiculos.png" alt="Veículos Locamobi - moto, carro e van com dinheiro voando" />
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <div class="how-content">
+                <h2>Como Funciona?</h2>
+                <p>"Alugar ou compartilhar veículos nunca foi tão fácil! Na <span class="brand-text">Locamobi</span>, você escolhe se quer dirigir ou disponibilizar seu carro, tudo com segurança e praticidade."</p>
+                <p class="steps">Veja como funciona em poucos passos.</p>
             </div>
-
-        </section>
-
-        <article class="explication-area">
-            <div class="explication">
-                <h1>Como Funciona?</h1>
-                <p>“Alugar ou compartilhar veículos nunca foi tão fácil! Na <span>Locamobi</span>, 
-                    você escolhe se quer dirigir ou disponibilizar seu carro, 
-                    tudo com segurança e praticidade.”
-                </p>
-                <h2>Veja como funciona em poucos passos.</h2>
-            </div>
-
-            <div class="steps-steps" >
-                <div class="card"> 
-                    <p>
-                        Inserir video de passo a passo pos sites pronto. Com até 4 partes.
-                    </p>
+            <div class="video-section">
+                <div class="video-placeholder">
+                    <span>📹 Vídeo em breve</span>
                 </div>
-
-                <p>Passo 1</p>
-            
+                <h3>Inserir vídeo de passo a passo por sites pronto. Com até 4 partes.</h3>
+                <p>Tutorial completo sobre como usar a plataforma</p>
+                <div class="step-indicator">Passo 1</div>
             </div>
+        </div>
+    </section>
 
-        </article>
-
-        <footer class="about-informations">
-            <div class="info">
-                
-                <img src="../assets/Logolocamobi.svg" alt="Logo da Locamobi">
-                <p>Locamobi</p>
-
-                <p><a href="#">Sobre a Locamobi</a></p>
-                <p><a href="#">Contrato e Termos</a></p>
-                <p><a href="#">Políticas</a></p>
-                <p><a href="#">Suporte</a></p>
-                <p><a href="#">Contato</a></p>
-                <img src="../assets/iconWats.svg" alt="Icone do WhatsApp">
-                <img src="../assets/iconInstagram.svg" alt="Icone do Instagram">
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="car-icon"></div>
+                <img src="../assets/Logolocamobi.svg" alt="Logo Locamobi">
+                <span>Locamobi</span>
             </div>
-        </footer>
+            <ul class="footer-links">
+                <li><a href="#sobre">Sobre a Locamobi</a></li>
+                <li><a href="#contratos">Contratos e Termos</a></li>
+                <li><a href="#politicas">Políticas</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#whatsapp" class="social-icon">W</a>
+                <a href="#instagram" class="social-icon">@</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
