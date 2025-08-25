@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locamobi - Aluguel de Veículos</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/pageEntrar.css">
 </head>
 
 <body>
@@ -90,9 +91,10 @@
 
     <!---->
 
-
+   
     <!-- Main Content -->
     <main id="login-modal" class="main-content">
+        
         <div class="auth-container">
             <div class="auth-tabs">
                 <button class="tab-button active" onclick="switchTab('login')">Entrar</button>
@@ -118,8 +120,8 @@
                         <a href="#">Esqueceu sua senha?</a>
                     </div>
 
-                    <div class="backHome-link">
-                        <a href="../Pages/PageHome.html">Voltar para o menu</a>
+                    <div class="backHome">
+                        <button  id="close" >fechar</button>
                     </div>
 
                 </form>
@@ -158,11 +160,16 @@
                     <div class="form-link">
                         Ao se cadastrar, você aceita nossos <a href="#">Termos de Uso</a>
                     </div>
+
+                    <div class="backHome">
+                        <button  id="close" >fechar</button>
+                    </div>
+
                 </form>
             </div>
         </div>
     </main>
-
+    
     <script>
         function switchTab(tabName) {
             // Remove active class from all tabs and buttons
@@ -177,12 +184,11 @@
             document.getElementById(tabName).classList.add('active');
             event.target.classList.add('active');
         }
-    </script>
+    </script> 
 
-
-
-
+        </div>
     <script src="../automation/modalLogin.js"></script>
+
 </body>
 
 </html>
